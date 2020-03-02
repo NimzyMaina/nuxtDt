@@ -1,8 +1,8 @@
 <template>
 <div class="container p-4">
   <div class="row pull-right">
-    <div class="col-md-3 offset-md-9 mb-4">
-      <button class="btn btn-block btn-info p-2" @click="update">
+    <div class="col-md-4 offset-md-8 mb-4">
+      <button class="btn btn-block btn-info" @click="update">
         Move Ashton Cox to Engineering
       </button>
     </div>
