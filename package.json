@@ -1,0 +1,21 @@
+{
+  "name": "nuxtdt",
+  "version": "1.0.0",
+  "description": "jQuery DataTables & NuxtJs Play Nice",
+  "author": "NIMROD MAINA",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "bootstrap": "4.1.3",
+    "jquery": "^3.4.1",
+    "nuxt": "^2.0.0",
+    "popper.js": "^1.16.1",
+    "vue-meta": "^2.3.3"
+  },
+  "devDependencies": {}
+}
