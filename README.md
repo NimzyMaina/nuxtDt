@@ -4,7 +4,7 @@
 
 This project demonstrates how to make NuxtJs work with jQuery Datatables.
 
-It also demonstrates how to do a *Real-time* update to the Datatable.
+It also demonstrates how to do a **Real-time** update to the Datatable.
 
 ## Screen Shot
 ![alt tag](https://raw.github.com/NimzyMaina/nuxtDt/master/media/nuxtDt.png)
