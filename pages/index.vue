@@ -1,7 +1,10 @@
 <template>
 <div class="container p-4">
   <div class="row pull-right">
-    <div class="col-md-4 offset-md-8 mb-4">
+    <div class="col-md-8 mb-4">
+      <nuxt-link to="/server"  class="btn btn-warning">Server Side Example <i class="d-inline material-icons float-right">arrow_right_alt</i></nuxt-link>
+    </div>
+    <div class="col-md-4 mb-4">
       <button class="btn btn-block btn-info" @click="update">
         Move Ashton Cox to Engineering
       </button>
@@ -498,6 +501,9 @@
                 script: [
                     { src: "https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js", defer: true, body: true, callback: this.onScriptLoaded },
                     { src: "https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js", body: true, skip: !this.externalLoaded, },
+                ],
+                link: [
+                    { rel: "stylesheet", href: "https://fonts.googleapis.com/icon?family=Material+Icons"}
                 ]
             }
         },
@@ -509,6 +515,9 @@
         },
         mounted() {
           console.log('table mounted');
+            if(this.dataTable === null){
+                this.onScriptLoaded();
+            }
         },
         methods: {
             onScriptLoaded() {
