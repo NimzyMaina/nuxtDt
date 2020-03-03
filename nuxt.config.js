@@ -44,6 +44,7 @@ export default {
     { src: "~plugins/bstrap.js" },
     { src: "~plugins/vscript.js", mode: 'client'  },
     { src: '~/plugins/after-each', mode: 'client' },
+    { src: '~/plugins/employees', mode: 'client' },
   ],
   /*
   ** Nuxt.js dev-modules

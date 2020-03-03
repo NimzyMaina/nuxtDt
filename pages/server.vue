@@ -51,6 +51,7 @@
             if(this.dataTable == null){
                 this.onScriptLoaded();
             }
+            this.$employeesHub.$on('employee-updated', this.onEmployeeUpdated)
         },
         methods: {
             onScriptLoaded() {
@@ -115,7 +116,29 @@
                     position = `<span class="btn btn-warning p-2 no-bg">${position}</span>`;
                 }
                 return position = `<span class="btn btn-light p-2  no-bg">${position}</span>`;
+            },
+            onEmployeeUpdated(employee) {
+                console.log(employee);
+                let indexes = this.dataTable
+                    .rows()
+                    .indexes()
+                    .filter(( value, index ) =>  {
+                        return employee.id === this.dataTable.row(value).data()['id'];
+                    });
+
+                if(!indexes[0]){
+                    console.log('No such item');
+                    return;
+                }
+
+                // Get the row for indexes[0]
+                let row = this.dataTable.row(indexes[0]);
+                // Update the table data and redraw the table
+                row.data(employee);//.draw(false);
             }
+        },
+        beforeDestroy () {
+            this.$employeesHub.$off('employee-updated', this.onEmployeeUpdated)
         }
     }
 </script>

@@ -1,10 +1,17 @@
 # nuxtDt
 
-> jQuery DataTables & NuxtJs Play Nice
+> jQuery DataTables, .Net Core, SignalR & NuxtJs Play Nice Together
 
 This project demonstrates how to make NuxtJs work with jQuery Datatables.
 
-It also demonstrates how to do a **Real-time** update to the Datatable.
+It also demonstrates how to do a **Real-time** update to the Datatable using **SignalR**.
+
+## Technologies Used
+
+- **NuxtJs**
+- **SignalR**
+- **.Net Core WebApi**
+- **jQuery Datatables**
 
 ## Server-side Project
 
@@ -38,6 +45,4 @@ $ yarn generate
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
-## TODO
 
-- Add **SignalR Real-time** Update

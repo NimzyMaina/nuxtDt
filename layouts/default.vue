@@ -4,6 +4,18 @@
   </div>
 </template>
 
+<script>
+    import Vue from 'vue'
+    export default {
+        mounted() {
+            Vue.prototype.startSignalR();
+        },
+        beforeDestroy() {
+            Vue.prototype.stopSignalR();
+        },
+    }
+</script>
+
 <style>
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
