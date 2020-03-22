@@ -126,7 +126,7 @@
                         return employee.id === this.dataTable.row(value).data()['id'];
                     });
 
-                if(!indexes[0]){
+                if(indexes.length <= 0){
                     console.log('No such item');
                     return;
                 }

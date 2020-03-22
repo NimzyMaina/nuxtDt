@@ -17,7 +17,17 @@ It also demonstrates how to do a **Real-time** update to the Datatable using **S
 
 The server side of this project can be found at [NuxtDt.Api Server Side](https://www.github.com/NimzyMaina/NuxtDt.Api)
 
+## Update API 
+
+Make this **PUT** Request to the server to trigger SignalR Real-time update.
+
+![alt tag](https://raw.github.com/NimzyMaina/nuxtDt/master/media/employee-update.png)
+
 ## Screenshots
+### SignalR Real-time DataTables Update
+
+![alt tag](https://raw.github.com/NimzyMaina/nuxtDt/master/media/nuxtdt-signalr.gif)
+
 ### Basic Example
 
 ![alt tag](https://raw.github.com/NimzyMaina/nuxtDt/master/media/nuxtDt.png)
